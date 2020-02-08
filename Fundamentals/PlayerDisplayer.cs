@@ -8,7 +8,10 @@ namespace Fundamentals
     {
       Console.WriteLine($"Player Name: {player.Name}");
 
-      if (player.DaysSinceLastLogin == -1)
+      // Bad Code
+      // if (player.DaysSinceLastLogin == -1)
+      // Good Code 
+      if (player.DaysSinceLastLogin == null)
       {
         Console.WriteLine("No entry for last logged in");
       }
@@ -17,7 +20,10 @@ namespace Fundamentals
         Console.WriteLine($"Days Since Last Login is: {player.DaysSinceLastLogin}");
       }
 
-      if (player.DateOfBirth == DateTime.MinValue)
+      // Bad Code 
+      // if (player.DateOfBirth == DateTime.MinValue)
+      // Good Code 
+      if (player.DateOfBirth == null)
       {
         Console.WriteLine("No entry for date of birth");
       }

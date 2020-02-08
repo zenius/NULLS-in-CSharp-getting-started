@@ -6,9 +6,20 @@ namespace Fundamentals
   {
     static void Main(string[] args)
     {
-      // FirstExample();
-      SecondExample();
+      //   FirstExample();
+      //   SecondExample();
+      ThirdExample();
 
+    }
+
+    private static void ThirdExample()
+    {
+      Player player = new Player(3)
+      {
+        Name = "Zen"
+      };
+
+      PlayerDisplayer.ShowPlayerDetails(player);
     }
 
     private static void SecondExample()
